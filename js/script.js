@@ -91,7 +91,7 @@ function register() {
     users[email] = { password, firstName, lastName };
     localStorage.setItem('users', JSON.stringify(users));
     alert('Account created successfully!');
-    window.location.href = 'login.html';
+    window.location.href = 'Login.html';
 }
 
 function login() {
@@ -132,7 +132,7 @@ function toggleCart(productId) {
     if (!isLoggedIn) {
         //................testtt........
         console.log('Redirecting to login.html');
-        redirectTo('login.html');
+        redirectTo('Login.html');
         return;
     }
     const product = products.find(p => p.id === productId);
@@ -192,7 +192,7 @@ function toggleFavorite(productId) {
 
     if (!isLoggedIn) {
         console.log('Redirecting to login.html');
-        redirectTo('login.html');
+        redirectTo('Login.html');
         return;
     }
 
